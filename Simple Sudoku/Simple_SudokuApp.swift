@@ -11,7 +11,7 @@ import SwiftUI
 struct Simple_SudokuApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainMenu()
         }
     }
 }

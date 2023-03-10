@@ -7,18 +7,64 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		349FE6FB29B7E101009A3FD7 /* PuzzleGridEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349FE6FA29B7E101009A3FD7 /* PuzzleGridEntry.swift */; };
+		349FE6FD29B7E197009A3FD7 /* NavigationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349FE6FC29B7E197009A3FD7 /* NavigationButton.swift */; };
+		349FE70029B7EC2D009A3FD7 /* ButtonLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349FE6FF29B7EC2D009A3FD7 /* ButtonLabel.swift */; };
+		349FE70229B7F0EA009A3FD7 /* PuzzleGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349FE70129B7F0EA009A3FD7 /* PuzzleGrid.swift */; };
+		349FE70429B7F0F5009A3FD7 /* PuzzleControlArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349FE70329B7F0F5009A3FD7 /* PuzzleControlArea.swift */; };
+		349FE70629B7F124009A3FD7 /* PuzzleGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349FE70529B7F124009A3FD7 /* PuzzleGridCell.swift */; };
+		349FE70829B7F176009A3FD7 /* PuzzleGridArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349FE70729B7F176009A3FD7 /* PuzzleGridArea.swift */; };
+		349FE70A29B7F202009A3FD7 /* CellIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349FE70929B7F202009A3FD7 /* CellIdentifier.swift */; };
+		349FE70C29B7F689009A3FD7 /* GridCellBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349FE70B29B7F689009A3FD7 /* GridCellBorder.swift */; };
+		349FE70F29B8061C009A3FD7 /* DebugUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349FE70E29B8061C009A3FD7 /* DebugUtil.swift */; };
+		349FE71329B80B9C009A3FD7 /* PuzzleNumberControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349FE71229B80B9C009A3FD7 /* PuzzleNumberControls.swift */; };
+		349FE71529B80BAC009A3FD7 /* PuzzleEntryControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349FE71429B80BAC009A3FD7 /* PuzzleEntryControls.swift */; };
+		349FE71A29B81192009A3FD7 /* PuzzleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349FE71929B81192009A3FD7 /* PuzzleViewModel.swift */; };
+		349FE71C29B811CF009A3FD7 /* Puzzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349FE71B29B811CF009A3FD7 /* Puzzle.swift */; };
+		349FE72029BA4C20009A3FD7 /* PuzzleCellContents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349FE71F29BA4C20009A3FD7 /* PuzzleCellContents.swift */; };
+		349FE72229BA4C4A009A3FD7 /* CellContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349FE72129BA4C4A009A3FD7 /* CellContent.swift */; };
+		349FE72429BA5A4B009A3FD7 /* PuzzleCellHighlighting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349FE72329BA5A4B009A3FD7 /* PuzzleCellHighlighting.swift */; };
 		34C40C8029B7AFFB00D11DC4 /* Simple_SudokuApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C40C7F29B7AFFB00D11DC4 /* Simple_SudokuApp.swift */; };
-		34C40C8229B7AFFB00D11DC4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C40C8129B7AFFB00D11DC4 /* ContentView.swift */; };
 		34C40C8429B7AFFC00D11DC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34C40C8329B7AFFC00D11DC4 /* Assets.xcassets */; };
 		34C40C8729B7AFFC00D11DC4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34C40C8629B7AFFC00D11DC4 /* Preview Assets.xcassets */; };
+		34C40C8F29B7B25C00D11DC4 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 34C40C8E29B7B25C00D11DC4 /* Realm */; };
+		34C40C9129B7B25C00D11DC4 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 34C40C9029B7B25C00D11DC4 /* RealmSwift */; };
+		34C40C9529B7B33D00D11DC4 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C40C9429B7B33D00D11DC4 /* MainMenu.swift */; };
+		34C40C9829B7B35D00D11DC4 /* Logo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C40C9729B7B35D00D11DC4 /* Logo.swift */; };
+		34C40C9A29B7B7AE00D11DC4 /* DifficultySelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C40C9929B7B7AE00D11DC4 /* DifficultySelector.swift */; };
+		34C40C9E29B7B7E100D11DC4 /* PuzzleDifficulty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C40C9D29B7B7E100D11DC4 /* PuzzleDifficulty.swift */; };
+		34C40CA029B7B97400D11DC4 /* SelectButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C40C9F29B7B97400D11DC4 /* SelectButton.swift */; };
+		34C40CA229B7BA7200D11DC4 /* RoundedRectangleFill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C40CA129B7BA7200D11DC4 /* RoundedRectangleFill.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		349FE6FA29B7E101009A3FD7 /* PuzzleGridEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleGridEntry.swift; sourceTree = "<group>"; };
+		349FE6FC29B7E197009A3FD7 /* NavigationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationButton.swift; sourceTree = "<group>"; };
+		349FE6FF29B7EC2D009A3FD7 /* ButtonLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonLabel.swift; sourceTree = "<group>"; };
+		349FE70129B7F0EA009A3FD7 /* PuzzleGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleGrid.swift; sourceTree = "<group>"; };
+		349FE70329B7F0F5009A3FD7 /* PuzzleControlArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleControlArea.swift; sourceTree = "<group>"; };
+		349FE70529B7F124009A3FD7 /* PuzzleGridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleGridCell.swift; sourceTree = "<group>"; };
+		349FE70729B7F176009A3FD7 /* PuzzleGridArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleGridArea.swift; sourceTree = "<group>"; };
+		349FE70929B7F202009A3FD7 /* CellIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellIdentifier.swift; sourceTree = "<group>"; };
+		349FE70B29B7F689009A3FD7 /* GridCellBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridCellBorder.swift; sourceTree = "<group>"; };
+		349FE70E29B8061C009A3FD7 /* DebugUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugUtil.swift; sourceTree = "<group>"; };
+		349FE71229B80B9C009A3FD7 /* PuzzleNumberControls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleNumberControls.swift; sourceTree = "<group>"; };
+		349FE71429B80BAC009A3FD7 /* PuzzleEntryControls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleEntryControls.swift; sourceTree = "<group>"; };
+		349FE71929B81192009A3FD7 /* PuzzleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleViewModel.swift; sourceTree = "<group>"; };
+		349FE71B29B811CF009A3FD7 /* Puzzle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Puzzle.swift; sourceTree = "<group>"; };
+		349FE71F29BA4C20009A3FD7 /* PuzzleCellContents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleCellContents.swift; sourceTree = "<group>"; };
+		349FE72129BA4C4A009A3FD7 /* CellContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellContent.swift; sourceTree = "<group>"; };
+		349FE72329BA5A4B009A3FD7 /* PuzzleCellHighlighting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleCellHighlighting.swift; sourceTree = "<group>"; };
 		34C40C7C29B7AFFB00D11DC4 /* Simple Sudoku.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Simple Sudoku.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		34C40C7F29B7AFFB00D11DC4 /* Simple_SudokuApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Simple_SudokuApp.swift; sourceTree = "<group>"; };
-		34C40C8129B7AFFB00D11DC4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		34C40C8329B7AFFC00D11DC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		34C40C8629B7AFFC00D11DC4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		34C40C9429B7B33D00D11DC4 /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
+		34C40C9729B7B35D00D11DC4 /* Logo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logo.swift; sourceTree = "<group>"; };
+		34C40C9929B7B7AE00D11DC4 /* DifficultySelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultySelector.swift; sourceTree = "<group>"; };
+		34C40C9D29B7B7E100D11DC4 /* PuzzleDifficulty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleDifficulty.swift; sourceTree = "<group>"; };
+		34C40C9F29B7B97400D11DC4 /* SelectButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectButton.swift; sourceTree = "<group>"; };
+		34C40CA129B7BA7200D11DC4 /* RoundedRectangleFill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedRectangleFill.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,12 +72,74 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34C40C9129B7B25C00D11DC4 /* RealmSwift in Frameworks */,
+				34C40C8F29B7B25C00D11DC4 /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		349FE6F929B7E0D1009A3FD7 /* Puzzle Grid */ = {
+			isa = PBXGroup;
+			children = (
+				349FE6FA29B7E101009A3FD7 /* PuzzleGridEntry.swift */,
+				349FE71129B80B5F009A3FD7 /* Controls */,
+				349FE71029B80B4F009A3FD7 /* Grid Area */,
+			);
+			path = "Puzzle Grid";
+			sourceTree = "<group>";
+		};
+		349FE6FE29B7EC1F009A3FD7 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				34C40C9F29B7B97400D11DC4 /* SelectButton.swift */,
+				349FE6FC29B7E197009A3FD7 /* NavigationButton.swift */,
+				349FE6FF29B7EC2D009A3FD7 /* ButtonLabel.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		349FE70D29B805CC009A3FD7 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				349FE70E29B8061C009A3FD7 /* DebugUtil.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		349FE71029B80B4F009A3FD7 /* Grid Area */ = {
+			isa = PBXGroup;
+			children = (
+				349FE70729B7F176009A3FD7 /* PuzzleGridArea.swift */,
+				349FE70129B7F0EA009A3FD7 /* PuzzleGrid.swift */,
+				349FE70529B7F124009A3FD7 /* PuzzleGridCell.swift */,
+				349FE71F29BA4C20009A3FD7 /* PuzzleCellContents.swift */,
+				349FE72329BA5A4B009A3FD7 /* PuzzleCellHighlighting.swift */,
+				349FE70B29B7F689009A3FD7 /* GridCellBorder.swift */,
+			);
+			path = "Grid Area";
+			sourceTree = "<group>";
+		};
+		349FE71129B80B5F009A3FD7 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				349FE70329B7F0F5009A3FD7 /* PuzzleControlArea.swift */,
+				349FE71229B80B9C009A3FD7 /* PuzzleNumberControls.swift */,
+				349FE71429B80BAC009A3FD7 /* PuzzleEntryControls.swift */,
+			);
+			path = Controls;
+			sourceTree = "<group>";
+		};
+		349FE71829B81184009A3FD7 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				349FE71929B81192009A3FD7 /* PuzzleViewModel.swift */,
+				349FE72129BA4C4A009A3FD7 /* CellContent.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
 		34C40C7329B7AFFB00D11DC4 = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +159,10 @@
 		34C40C7E29B7AFFB00D11DC4 /* Simple Sudoku */ = {
 			isa = PBXGroup;
 			children = (
+				349FE70D29B805CC009A3FD7 /* Utility */,
+				34C40C9B29B7B7CA00D11DC4 /* Model */,
+				34C40C9329B7B31F00D11DC4 /* Views */,
 				34C40C7F29B7AFFB00D11DC4 /* Simple_SudokuApp.swift */,
-				34C40C8129B7AFFB00D11DC4 /* ContentView.swift */,
 				34C40C8329B7AFFC00D11DC4 /* Assets.xcassets */,
 				34C40C8529B7AFFC00D11DC4 /* Preview Content */,
 			);
@@ -65,6 +175,54 @@
 				34C40C8629B7AFFC00D11DC4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		34C40C9229B7B30800D11DC4 /* Main Menu */ = {
+			isa = PBXGroup;
+			children = (
+				34C40C9429B7B33D00D11DC4 /* MainMenu.swift */,
+				34C40C9929B7B7AE00D11DC4 /* DifficultySelector.swift */,
+			);
+			path = "Main Menu";
+			sourceTree = "<group>";
+		};
+		34C40C9329B7B31F00D11DC4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				34C40C9629B7B35000D11DC4 /* Common */,
+				34C40C9229B7B30800D11DC4 /* Main Menu */,
+				349FE6F929B7E0D1009A3FD7 /* Puzzle Grid */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		34C40C9629B7B35000D11DC4 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				349FE6FE29B7EC1F009A3FD7 /* Buttons */,
+				34C40C9729B7B35D00D11DC4 /* Logo.swift */,
+				34C40CA129B7BA7200D11DC4 /* RoundedRectangleFill.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		34C40C9B29B7B7CA00D11DC4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				349FE71829B81184009A3FD7 /* View Models */,
+				34C40C9C29B7B7D900D11DC4 /* Enums */,
+				349FE70929B7F202009A3FD7 /* CellIdentifier.swift */,
+				349FE71B29B811CF009A3FD7 /* Puzzle.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		34C40C9C29B7B7D900D11DC4 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				34C40C9D29B7B7E100D11DC4 /* PuzzleDifficulty.swift */,
+			);
+			path = Enums;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +241,10 @@
 			dependencies = (
 			);
 			name = "Simple Sudoku";
+			packageProductDependencies = (
+				34C40C8E29B7B25C00D11DC4 /* Realm */,
+				34C40C9029B7B25C00D11DC4 /* RealmSwift */,
+			);
 			productName = "Simple Sudoku";
 			productReference = 34C40C7C29B7AFFB00D11DC4 /* Simple Sudoku.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +273,9 @@
 				Base,
 			);
 			mainGroup = 34C40C7329B7AFFB00D11DC4;
+			packageReferences = (
+				34C40C8D29B7B25C00D11DC4 /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			productRefGroup = 34C40C7D29B7AFFB00D11DC4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,7 +302,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				34C40C8229B7AFFB00D11DC4 /* ContentView.swift in Sources */,
+				349FE71329B80B9C009A3FD7 /* PuzzleNumberControls.swift in Sources */,
+				34C40CA029B7B97400D11DC4 /* SelectButton.swift in Sources */,
+				34C40CA229B7BA7200D11DC4 /* RoundedRectangleFill.swift in Sources */,
+				349FE72229BA4C4A009A3FD7 /* CellContent.swift in Sources */,
+				349FE6FB29B7E101009A3FD7 /* PuzzleGridEntry.swift in Sources */,
+				34C40C9529B7B33D00D11DC4 /* MainMenu.swift in Sources */,
+				349FE70229B7F0EA009A3FD7 /* PuzzleGrid.swift in Sources */,
+				349FE72429BA5A4B009A3FD7 /* PuzzleCellHighlighting.swift in Sources */,
+				34C40C9829B7B35D00D11DC4 /* Logo.swift in Sources */,
+				349FE70F29B8061C009A3FD7 /* DebugUtil.swift in Sources */,
+				349FE70C29B7F689009A3FD7 /* GridCellBorder.swift in Sources */,
+				349FE70429B7F0F5009A3FD7 /* PuzzleControlArea.swift in Sources */,
+				349FE70629B7F124009A3FD7 /* PuzzleGridCell.swift in Sources */,
+				349FE6FD29B7E197009A3FD7 /* NavigationButton.swift in Sources */,
+				349FE71529B80BAC009A3FD7 /* PuzzleEntryControls.swift in Sources */,
+				349FE70029B7EC2D009A3FD7 /* ButtonLabel.swift in Sources */,
+				349FE71A29B81192009A3FD7 /* PuzzleViewModel.swift in Sources */,
+				349FE71C29B811CF009A3FD7 /* Puzzle.swift in Sources */,
+				349FE70A29B7F202009A3FD7 /* CellIdentifier.swift in Sources */,
+				349FE72029BA4C20009A3FD7 /* PuzzleCellContents.swift in Sources */,
+				34C40C9A29B7B7AE00D11DC4 /* DifficultySelector.swift in Sources */,
+				34C40C9E29B7B7E100D11DC4 /* PuzzleDifficulty.swift in Sources */,
+				349FE70829B7F176009A3FD7 /* PuzzleGridArea.swift in Sources */,
 				34C40C8029B7AFFB00D11DC4 /* Simple_SudokuApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,6 +526,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		34C40C8D29B7B25C00D11DC4 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.36.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		34C40C8E29B7B25C00D11DC4 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 34C40C8D29B7B25C00D11DC4 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		34C40C9029B7B25C00D11DC4 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 34C40C8D29B7B25C00D11DC4 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 34C40C7429B7AFFB00D11DC4 /* Project object */;
 }

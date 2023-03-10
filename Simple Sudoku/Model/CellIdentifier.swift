@@ -39,7 +39,7 @@ class CellIdentifier: Identifiable, Hashable, Equatable, CustomStringConvertible
         hasher.combine(id)
     }
     
-    func getCellGroupSet() -> Set<CellIdentifier> {
+    func getCellGroupSet(cache: Bool = true) -> Set<CellIdentifier> {
         if groupSet != nil { return groupSet! }
         
         var group: Set<CellIdentifier> = []
@@ -53,11 +53,11 @@ class CellIdentifier: Identifiable, Hashable, Equatable, CustomStringConvertible
             }
         }
         
-        self.groupSet = group
+        if cache { self.groupSet = group }
         return group
     }
     
-    func getCellInlineSet() -> Set<CellIdentifier> {
+    func getCellInlineSet(cache: Bool = true) -> Set<CellIdentifier> {
         if inlineSet != nil { return inlineSet! }
         
         var inline: Set<CellIdentifier> = []
@@ -72,7 +72,7 @@ class CellIdentifier: Identifiable, Hashable, Equatable, CustomStringConvertible
             }
         }
         
-        self.inlineSet = inline
+        if cache { self.inlineSet = inline }
         return inline
     }
 }

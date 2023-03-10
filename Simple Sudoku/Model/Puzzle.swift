@@ -57,7 +57,7 @@ class Puzzle: ObservableObject {
         var localEmptyCells = emptyCells
         let myCell = localEmptyCells.removeLast()
         var valueSet = Set([1,2,3,4,5,6,7,8,9])
-        let cellsImpactingMe = myCell.getCellGroupSet().union(myCell.getCellInlineSet())
+        let cellsImpactingMe = myCell.getCellGroupSet(cache: false).union(myCell.getCellInlineSet(cache: false))
         
         var solutionCount = 0
         

@@ -17,8 +17,8 @@ struct ButtonLabel: View {
             .padding([.leading, .trailing], 10)
             .frame(maxWidth: .infinity)
             .background(
-                RoundedRectangleFill(border: .black,
-                                     background: showBackground ? .blue.opacity(0.8) : .white,
+                RoundedRectangleFill(border: .gray,
+                                     background: showBackground ? .blue.opacity(0.8) : .gray.opacity(0.2),
                                      cornerRadius: 8)
             )
     }

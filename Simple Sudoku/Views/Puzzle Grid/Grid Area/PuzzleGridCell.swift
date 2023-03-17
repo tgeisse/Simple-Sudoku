@@ -56,8 +56,10 @@ struct PuzzleGridCell: View {
     }
 }
 
+#if DEBUG
 struct PuzzleGridCell_Previews: PreviewProvider {
     static var previews: some View {
         PuzzleGridCell(squareId: CellIdentifier(id: 10))
     }
 }
+#endif

@@ -18,6 +18,7 @@ struct PuzzleNumberControls: View {
                     puzzleViewModel.numberPressed(num)
                 } label: {
                     ButtonLabel(label: "\(num)", showBackground: true)
+                        .monospaced()
                 }
                 .buttonStyle(.plain)
                 .aspectRatio(1, contentMode: .fit)
@@ -26,8 +27,10 @@ struct PuzzleNumberControls: View {
     }
 }
 
+#if DEBUG
 struct PuzzleNumberControls_Previews: PreviewProvider {
     static var previews: some View {
         PuzzleNumberControls()
     }
 }
+#endif

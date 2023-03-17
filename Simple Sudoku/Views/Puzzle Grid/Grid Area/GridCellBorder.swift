@@ -34,31 +34,33 @@ struct GridCellBorder: View {
     var body: some View {
         GeometryReader { proxy in
             Rectangle()
-                .fill(.black)
+                .fill(.foreground)
                 .offset(x: 0, y: 0)
                 .frame(width: proxy.size.width, height: topBorder.strokeWidth)
             
             Rectangle()
-                .fill(.black)
+                .fill(.foreground)
                 .offset(x: proxy.size.width - rightBorder.strokeWidth, y: 0)
                 .frame(width: rightBorder.strokeWidth, height: proxy.size.height)
             
             Rectangle()
-                .fill(.black)
+                .fill(.foreground)
                 .offset(x: 0, y: proxy.size.height - bottomBorder.strokeWidth)
                 .frame(width: proxy.size.width, height: bottomBorder.strokeWidth)
             
             Rectangle()
-                .fill(.black)
+                .fill(.foreground)
                 .offset(x: 0, y: 0)
                 .frame(width: leftBorder.strokeWidth, height: proxy.size.height)
         }
     }
 }
 
+#if DEBUG
 struct GridCellBorder_Previews: PreviewProvider {
     static var previews: some View {
         GridCellBorder(topBorder: .heavy, rightBorder: .regular, bottomBorder: .heavy, leftBorder: .heavy)
             .frame(width:300, height: 300)
     }
 }
+#endif

@@ -14,9 +14,9 @@ enum PuzzleDifficulty: String, CaseIterable {
     
     var cellsGiven: ClosedRange<Int> {
         switch self {
-        case .easy: return (40...45)
-        case .medium: return (33...37)
-        case .hard: return (27...32)
+        case .easy: return 46...52
+        case .medium: return 36...45
+        case .hard: return 31...35
         }
     }
 }

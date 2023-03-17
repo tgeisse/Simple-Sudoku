@@ -8,7 +8,10 @@
 import Foundation
 
 class PuzzleViewModel: ObservableObject {
-    @Published var cellContents: [CellContent] = []
+    @Published var puzzleReady = false
+    @Published var cellContents: [CellContent] = (0..<81).map { _ in CellContent() }
+    
+    let cellWarningTracker = CellWarningTracking()
     private var puzzle: Puzzle
     
     // MARK: - Controls for Cell Selection
@@ -21,14 +24,24 @@ class PuzzleViewModel: ObservableObject {
         case notes
     }
     
+    #if DEBUG
+    init() {
+        puzzle = Puzzle(difficulty: .easy)
+    }
+    #endif
     
     init(difficulty: PuzzleDifficulty) {
         puzzle = Puzzle(difficulty: difficulty)
-        
+    }
+    
+    func generatePuzzle() {
+        puzzle.generate()
+    }
+    
+    func fillGivenCells() {
         for i in 0..<81 {
-            let cellContent = CellContent()
-            cellContent.guess = puzzle.given[i]
-            cellContents.append(cellContent)
+            cellContents[i].guess = puzzle.given[i]
+            cellContents[i].given = puzzle.given[i] != nil
         }
     }
 }
@@ -44,15 +57,23 @@ extension PuzzleViewModel {
     
     private func processNumberGuess(_ num: Int) {
         guard let selectedCell = selectedGuessingCell else { return }
-        cellContents[selectedCell.id].guess = num
         
-        selectedCell.getCellGroupSet()
-            .union(selectedCell.getCellInlineSet())
-            .forEach { cellContents[$0.id].notes[num - 1] = false }
+        if puzzle.given[selectedCell.id] == nil {
+            cellContents[selectedCell.id].guess = num
+        } else {
+            cellWarningTracker.showGivenCellWarning = true
+        }
+        
+        selectedCell.allImpactedSet
+            .forEach { cellContents[$0.id].notes.remove(num) }
     }
     
     private func processNewNote(_ num: Int) {
-        selectedNotesCells.forEach { cellContents[$0.id].notes[num - 1].toggle() }
+        selectedNotesCells.forEach {
+            if cellContents[$0.id].notes.insert(num).inserted == false {
+                cellContents[$0.id].notes.remove(num)
+            }
+        }
     }
 }
 
@@ -74,11 +95,11 @@ extension PuzzleViewModel {
     private func changeGuessingSelection(to cellId: CellIdentifier) {
         if cellId == selectedGuessingCell { return }
         
-        let curSelGroup = selectedGuessingCell?.getCellGroupSet() ?? []
-        let curSelInline = selectedGuessingCell?.getCellInlineSet() ?? []
+        let curSelGroup = selectedGuessingCell?.groupSet ?? []
+        let curSelInline = selectedGuessingCell?.inlineSet ?? []
         
-        let newSelGroup = cellId.getCellGroupSet()
-        let newSelInline = cellId.getCellInlineSet()
+        let newSelGroup = cellId.groupSet
+        let newSelInline = cellId.inlineSet
         
         // to clear highlighting
         curSelGroup.union(curSelInline).forEach { cellContents[$0.id].highlighting = .none }

@@ -19,8 +19,10 @@ struct PuzzleCellHighlighting: View {
     }
 }
 
+#if DEBUG
 struct PuzzleCellHighlighting_Previews: PreviewProvider {
     static var previews: some View {
         PuzzleCellHighlighting()
     }
 }
+#endif

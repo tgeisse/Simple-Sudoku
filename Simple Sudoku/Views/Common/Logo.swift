@@ -15,7 +15,7 @@ struct Logo: View {
                 .minimumScaleFactor(0.01)
             
             VStack(alignment: .leading) {
-                Text("imple")
+                Text("imply")
                 Text("udoku")
             }
             .font(.system(size: 200, weight: .medium))

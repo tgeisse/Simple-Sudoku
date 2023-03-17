@@ -24,17 +24,20 @@
 		349FE72029BA4C20009A3FD7 /* PuzzleCellContents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349FE71F29BA4C20009A3FD7 /* PuzzleCellContents.swift */; };
 		349FE72229BA4C4A009A3FD7 /* CellContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349FE72129BA4C4A009A3FD7 /* CellContent.swift */; };
 		349FE72429BA5A4B009A3FD7 /* PuzzleCellHighlighting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349FE72329BA5A4B009A3FD7 /* PuzzleCellHighlighting.swift */; };
+		34B121B129BE459300DB3129 /* CellGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B121B029BE459300DB3129 /* CellGroup.swift */; };
 		34C40C8029B7AFFB00D11DC4 /* Simple_SudokuApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C40C7F29B7AFFB00D11DC4 /* Simple_SudokuApp.swift */; };
 		34C40C8429B7AFFC00D11DC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34C40C8329B7AFFC00D11DC4 /* Assets.xcassets */; };
 		34C40C8729B7AFFC00D11DC4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34C40C8629B7AFFC00D11DC4 /* Preview Assets.xcassets */; };
-		34C40C8F29B7B25C00D11DC4 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 34C40C8E29B7B25C00D11DC4 /* Realm */; };
-		34C40C9129B7B25C00D11DC4 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 34C40C9029B7B25C00D11DC4 /* RealmSwift */; };
 		34C40C9529B7B33D00D11DC4 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C40C9429B7B33D00D11DC4 /* MainMenu.swift */; };
 		34C40C9829B7B35D00D11DC4 /* Logo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C40C9729B7B35D00D11DC4 /* Logo.swift */; };
 		34C40C9A29B7B7AE00D11DC4 /* DifficultySelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C40C9929B7B7AE00D11DC4 /* DifficultySelector.swift */; };
 		34C40C9E29B7B7E100D11DC4 /* PuzzleDifficulty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C40C9D29B7B7E100D11DC4 /* PuzzleDifficulty.swift */; };
 		34C40CA029B7B97400D11DC4 /* SelectButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C40C9F29B7B97400D11DC4 /* SelectButton.swift */; };
 		34C40CA229B7BA7200D11DC4 /* RoundedRectangleFill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C40CA129B7BA7200D11DC4 /* RoundedRectangleFill.swift */; };
+		34C9A41229BFB746009DAFCC /* PuzzleGenerationTesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C9A41129BFB746009DAFCC /* PuzzleGenerationTesting.swift */; };
+		34C9A41429C4BF89009DAFCC /* PuzzleCellContentNotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C9A41329C4BF89009DAFCC /* PuzzleCellContentNotes.swift */; };
+		34C9A41629C4E674009DAFCC /* GivenCellWarning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C9A41529C4E674009DAFCC /* GivenCellWarning.swift */; };
+		34C9A41829C4F30A009DAFCC /* CellWarningTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C9A41729C4F30A009DAFCC /* CellWarningTracking.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +58,7 @@
 		349FE71F29BA4C20009A3FD7 /* PuzzleCellContents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleCellContents.swift; sourceTree = "<group>"; };
 		349FE72129BA4C4A009A3FD7 /* CellContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellContent.swift; sourceTree = "<group>"; };
 		349FE72329BA5A4B009A3FD7 /* PuzzleCellHighlighting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleCellHighlighting.swift; sourceTree = "<group>"; };
+		34B121B029BE459300DB3129 /* CellGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellGroup.swift; sourceTree = "<group>"; };
 		34C40C7C29B7AFFB00D11DC4 /* Simple Sudoku.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Simple Sudoku.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		34C40C7F29B7AFFB00D11DC4 /* Simple_SudokuApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Simple_SudokuApp.swift; sourceTree = "<group>"; };
 		34C40C8329B7AFFC00D11DC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -65,6 +69,10 @@
 		34C40C9D29B7B7E100D11DC4 /* PuzzleDifficulty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleDifficulty.swift; sourceTree = "<group>"; };
 		34C40C9F29B7B97400D11DC4 /* SelectButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectButton.swift; sourceTree = "<group>"; };
 		34C40CA129B7BA7200D11DC4 /* RoundedRectangleFill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedRectangleFill.swift; sourceTree = "<group>"; };
+		34C9A41129BFB746009DAFCC /* PuzzleGenerationTesting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleGenerationTesting.swift; sourceTree = "<group>"; };
+		34C9A41329C4BF89009DAFCC /* PuzzleCellContentNotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleCellContentNotes.swift; sourceTree = "<group>"; };
+		34C9A41529C4E674009DAFCC /* GivenCellWarning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GivenCellWarning.swift; sourceTree = "<group>"; };
+		34C9A41729C4F30A009DAFCC /* CellWarningTracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellWarningTracking.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,8 +80,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				34C40C9129B7B25C00D11DC4 /* RealmSwift in Frameworks */,
-				34C40C8F29B7B25C00D11DC4 /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,6 +121,7 @@
 				349FE70129B7F0EA009A3FD7 /* PuzzleGrid.swift */,
 				349FE70529B7F124009A3FD7 /* PuzzleGridCell.swift */,
 				349FE71F29BA4C20009A3FD7 /* PuzzleCellContents.swift */,
+				34C9A41329C4BF89009DAFCC /* PuzzleCellContentNotes.swift */,
 				349FE72329BA5A4B009A3FD7 /* PuzzleCellHighlighting.swift */,
 				349FE70B29B7F689009A3FD7 /* GridCellBorder.swift */,
 			);
@@ -127,6 +134,7 @@
 				349FE70329B7F0F5009A3FD7 /* PuzzleControlArea.swift */,
 				349FE71229B80B9C009A3FD7 /* PuzzleNumberControls.swift */,
 				349FE71429B80BAC009A3FD7 /* PuzzleEntryControls.swift */,
+				34C9A41529C4E674009DAFCC /* GivenCellWarning.swift */,
 			);
 			path = Controls;
 			sourceTree = "<group>";
@@ -136,6 +144,7 @@
 			children = (
 				349FE71929B81192009A3FD7 /* PuzzleViewModel.swift */,
 				349FE72129BA4C4A009A3FD7 /* CellContent.swift */,
+				34C9A41729C4F30A009DAFCC /* CellWarningTracking.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -182,6 +191,7 @@
 			children = (
 				34C40C9429B7B33D00D11DC4 /* MainMenu.swift */,
 				34C40C9929B7B7AE00D11DC4 /* DifficultySelector.swift */,
+				34C9A41129BFB746009DAFCC /* PuzzleGenerationTesting.swift */,
 			);
 			path = "Main Menu";
 			sourceTree = "<group>";
@@ -212,6 +222,7 @@
 				349FE71829B81184009A3FD7 /* View Models */,
 				34C40C9C29B7B7D900D11DC4 /* Enums */,
 				349FE70929B7F202009A3FD7 /* CellIdentifier.swift */,
+				34B121B029BE459300DB3129 /* CellGroup.swift */,
 				349FE71B29B811CF009A3FD7 /* Puzzle.swift */,
 			);
 			path = Model;
@@ -242,8 +253,6 @@
 			);
 			name = "Simple Sudoku";
 			packageProductDependencies = (
-				34C40C8E29B7B25C00D11DC4 /* Realm */,
-				34C40C9029B7B25C00D11DC4 /* RealmSwift */,
 			);
 			productName = "Simple Sudoku";
 			productReference = 34C40C7C29B7AFFB00D11DC4 /* Simple Sudoku.app */;
@@ -274,7 +283,6 @@
 			);
 			mainGroup = 34C40C7329B7AFFB00D11DC4;
 			packageReferences = (
-				34C40C8D29B7B25C00D11DC4 /* XCRemoteSwiftPackageReference "realm-swift" */,
 			);
 			productRefGroup = 34C40C7D29B7AFFB00D11DC4 /* Products */;
 			projectDirPath = "";
@@ -303,11 +311,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				349FE71329B80B9C009A3FD7 /* PuzzleNumberControls.swift in Sources */,
+				34B121B129BE459300DB3129 /* CellGroup.swift in Sources */,
 				34C40CA029B7B97400D11DC4 /* SelectButton.swift in Sources */,
 				34C40CA229B7BA7200D11DC4 /* RoundedRectangleFill.swift in Sources */,
 				349FE72229BA4C4A009A3FD7 /* CellContent.swift in Sources */,
 				349FE6FB29B7E101009A3FD7 /* PuzzleGridEntry.swift in Sources */,
+				34C9A41829C4F30A009DAFCC /* CellWarningTracking.swift in Sources */,
 				34C40C9529B7B33D00D11DC4 /* MainMenu.swift in Sources */,
+				34C9A41429C4BF89009DAFCC /* PuzzleCellContentNotes.swift in Sources */,
 				349FE70229B7F0EA009A3FD7 /* PuzzleGrid.swift in Sources */,
 				349FE72429BA5A4B009A3FD7 /* PuzzleCellHighlighting.swift in Sources */,
 				34C40C9829B7B35D00D11DC4 /* Logo.swift in Sources */,
@@ -316,11 +327,13 @@
 				349FE70429B7F0F5009A3FD7 /* PuzzleControlArea.swift in Sources */,
 				349FE70629B7F124009A3FD7 /* PuzzleGridCell.swift in Sources */,
 				349FE6FD29B7E197009A3FD7 /* NavigationButton.swift in Sources */,
+				34C9A41629C4E674009DAFCC /* GivenCellWarning.swift in Sources */,
 				349FE71529B80BAC009A3FD7 /* PuzzleEntryControls.swift in Sources */,
 				349FE70029B7EC2D009A3FD7 /* ButtonLabel.swift in Sources */,
 				349FE71A29B81192009A3FD7 /* PuzzleViewModel.swift in Sources */,
 				349FE71C29B811CF009A3FD7 /* Puzzle.swift in Sources */,
 				349FE70A29B7F202009A3FD7 /* CellIdentifier.swift in Sources */,
+				34C9A41229BFB746009DAFCC /* PuzzleGenerationTesting.swift in Sources */,
 				349FE72029BA4C20009A3FD7 /* PuzzleCellContents.swift in Sources */,
 				34C40C9A29B7B7AE00D11DC4 /* DifficultySelector.swift in Sources */,
 				34C40C9E29B7B7E100D11DC4 /* PuzzleDifficulty.swift in Sources */,
@@ -382,7 +395,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -436,7 +449,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -457,17 +470,19 @@
 				DEVELOPMENT_TEAM = 57TCLD34EQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Simply Sudoku";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.puzzle-games";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.geissetaylor.Simple-Sudoku";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.geissetaylor.Simply-Sudoku";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -486,17 +501,19 @@
 				DEVELOPMENT_TEAM = 57TCLD34EQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Simply Sudoku";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.puzzle-games";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.geissetaylor.Simple-Sudoku";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.geissetaylor.Simply-Sudoku";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -526,30 +543,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		34C40C8D29B7B25C00D11DC4 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/realm/realm-swift.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 10.36.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		34C40C8E29B7B25C00D11DC4 /* Realm */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 34C40C8D29B7B25C00D11DC4 /* XCRemoteSwiftPackageReference "realm-swift" */;
-			productName = Realm;
-		};
-		34C40C9029B7B25C00D11DC4 /* RealmSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 34C40C8D29B7B25C00D11DC4 /* XCRemoteSwiftPackageReference "realm-swift" */;
-			productName = RealmSwift;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 34C40C7429B7AFFB00D11DC4 /* Project object */;
 }

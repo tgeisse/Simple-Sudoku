@@ -23,8 +23,15 @@ struct PuzzleGrid: View {
     }
 }
 
+#if DEBUG
 struct PuzzleGrid_Previews: PreviewProvider {
+    static var puzzle: PuzzleViewModel {
+        PuzzleViewModel(difficulty: .easy)
+    }
+    
     static var previews: some View {
         PuzzleGrid()
+            .environmentObject(puzzle)
     }
 }
+#endif

@@ -12,9 +12,7 @@ class CellContent: ObservableObject {
     @Published var guess: Int? = nil
     var guessText: String { guess == nil ? " " : "\(guess!)" }
     
-    @Published var notes: [Bool] = .init(repeating: false, count: 9)
-    var noteText: String { notes.enumerated().reduce("") { $0 + ($1.1 ? "\($1.0 + 1)" : " ") }}
-    
+    @Published var notes: Set<Int> = []
     
     enum Highlight {
         case none
@@ -29,10 +27,12 @@ class CellContent: ObservableObject {
             case .selected: return .orange.opacity(0.8)
             case .group: return .orange.opacity(0.1)
             case .inline: return .orange.opacity(0.3)
-            case .noteSelected: return .green.opacity(0.8)
+            case .noteSelected: return .green.opacity(0.7)
             }
         }
     }
     
     @Published var highlighting: Highlight = .none
+    
+    @Published var given: Bool = false
 }

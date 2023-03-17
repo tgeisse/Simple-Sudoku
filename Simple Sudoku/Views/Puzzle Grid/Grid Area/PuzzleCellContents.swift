@@ -16,18 +16,30 @@ struct PuzzleCellContents: View {
             
             if cellContents.guess != nil {
                 Text(cellContents.guessText)
-                    .lineLimit(1)
-            } else if !cellContents.notes.isEmpty {
-                Text(cellContents.noteText)
+                    .font(.system(size: 50))
+                    .monospaced()
                     .minimumScaleFactor(0.1)
-                    .lineLimit(2)
+                    .lineLimit(1)
+                    .padding(8)
+            } else if !cellContents.notes.isEmpty {
+                PuzzleCellContentNotes(notes: cellContents.notes)
             }
         }
+        .contentShape(Rectangle())
     }
 }
 
+#if DEBUG
 struct PuzzleCellContents_Previews: PreviewProvider {
+    static var testContents: CellContent {
+        let content = CellContent()
+        content.notes.insert(4)
+        return content
+    }
+    
     static var previews: some View {
         PuzzleCellContents()
+            .environmentObject(testContents)
     }
 }
+#endif

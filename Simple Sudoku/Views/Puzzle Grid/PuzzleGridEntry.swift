@@ -20,11 +20,26 @@ struct PuzzleGridEntry: View {
             PuzzleControlArea()
         }
         .environmentObject(puzzleViewModel)
+        .environmentObject(puzzleViewModel.cellWarningTracker)
+        .onAppear(perform: loadOrGeneratePuzzle)
+    }
+    
+    private func loadOrGeneratePuzzle() {
+        DispatchQueue.global(qos: .userInitiated).async {
+            puzzleViewModel.generatePuzzle()
+            
+            DispatchQueue.main.async {
+                puzzleViewModel.fillGivenCells()
+                puzzleViewModel.puzzleReady = true
+            }
+        }
     }
 }
 
+#if DEBUG
 struct PuzzleGridEntry_Previews: PreviewProvider {
     static var previews: some View {
         PuzzleGridEntry(difficulty: .medium)
     }
 }
+#endif

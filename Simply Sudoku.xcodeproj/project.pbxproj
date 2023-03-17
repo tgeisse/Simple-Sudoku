@@ -59,7 +59,7 @@
 		349FE72129BA4C4A009A3FD7 /* CellContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellContent.swift; sourceTree = "<group>"; };
 		349FE72329BA5A4B009A3FD7 /* PuzzleCellHighlighting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleCellHighlighting.swift; sourceTree = "<group>"; };
 		34B121B029BE459300DB3129 /* CellGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellGroup.swift; sourceTree = "<group>"; };
-		34C40C7C29B7AFFB00D11DC4 /* Simple Sudoku.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Simple Sudoku.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		34C40C7C29B7AFFB00D11DC4 /* Simply Sudoku.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Simply Sudoku.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		34C40C7F29B7AFFB00D11DC4 /* Simple_SudokuApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Simple_SudokuApp.swift; sourceTree = "<group>"; };
 		34C40C8329B7AFFC00D11DC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		34C40C8629B7AFFC00D11DC4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -152,7 +152,7 @@
 		34C40C7329B7AFFB00D11DC4 = {
 			isa = PBXGroup;
 			children = (
-				34C40C7E29B7AFFB00D11DC4 /* Simple Sudoku */,
+				34C40C7E29B7AFFB00D11DC4 /* Simply Sudoku */,
 				34C40C7D29B7AFFB00D11DC4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -160,12 +160,12 @@
 		34C40C7D29B7AFFB00D11DC4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				34C40C7C29B7AFFB00D11DC4 /* Simple Sudoku.app */,
+				34C40C7C29B7AFFB00D11DC4 /* Simply Sudoku.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		34C40C7E29B7AFFB00D11DC4 /* Simple Sudoku */ = {
+		34C40C7E29B7AFFB00D11DC4 /* Simply Sudoku */ = {
 			isa = PBXGroup;
 			children = (
 				349FE70D29B805CC009A3FD7 /* Utility */,
@@ -175,7 +175,7 @@
 				34C40C8329B7AFFC00D11DC4 /* Assets.xcassets */,
 				34C40C8529B7AFFC00D11DC4 /* Preview Content */,
 			);
-			path = "Simple Sudoku";
+			path = "Simply Sudoku";
 			sourceTree = "<group>";
 		};
 		34C40C8529B7AFFC00D11DC4 /* Preview Content */ = {
@@ -239,9 +239,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		34C40C7B29B7AFFB00D11DC4 /* Simple Sudoku */ = {
+		34C40C7B29B7AFFB00D11DC4 /* Simply Sudoku */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 34C40C8A29B7AFFC00D11DC4 /* Build configuration list for PBXNativeTarget "Simple Sudoku" */;
+			buildConfigurationList = 34C40C8A29B7AFFC00D11DC4 /* Build configuration list for PBXNativeTarget "Simply Sudoku" */;
 			buildPhases = (
 				34C40C7829B7AFFB00D11DC4 /* Sources */,
 				34C40C7929B7AFFB00D11DC4 /* Frameworks */,
@@ -251,11 +251,11 @@
 			);
 			dependencies = (
 			);
-			name = "Simple Sudoku";
+			name = "Simply Sudoku";
 			packageProductDependencies = (
 			);
 			productName = "Simple Sudoku";
-			productReference = 34C40C7C29B7AFFB00D11DC4 /* Simple Sudoku.app */;
+			productReference = 34C40C7C29B7AFFB00D11DC4 /* Simply Sudoku.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -273,7 +273,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 34C40C7729B7AFFB00D11DC4 /* Build configuration list for PBXProject "Simple Sudoku" */;
+			buildConfigurationList = 34C40C7729B7AFFB00D11DC4 /* Build configuration list for PBXProject "Simply Sudoku" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -288,7 +288,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				34C40C7B29B7AFFB00D11DC4 /* Simple Sudoku */,
+				34C40C7B29B7AFFB00D11DC4 /* Simply Sudoku */,
 			);
 		};
 /* End PBXProject section */
@@ -524,7 +524,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		34C40C7729B7AFFB00D11DC4 /* Build configuration list for PBXProject "Simple Sudoku" */ = {
+		34C40C7729B7AFFB00D11DC4 /* Build configuration list for PBXProject "Simply Sudoku" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				34C40C8829B7AFFC00D11DC4 /* Debug */,
@@ -533,7 +533,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		34C40C8A29B7AFFC00D11DC4 /* Build configuration list for PBXNativeTarget "Simple Sudoku" */ = {
+		34C40C8A29B7AFFC00D11DC4 /* Build configuration list for PBXNativeTarget "Simply Sudoku" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				34C40C8B29B7AFFC00D11DC4 /* Debug */,

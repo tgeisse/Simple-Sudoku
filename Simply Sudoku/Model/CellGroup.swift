@@ -8,96 +8,102 @@
 import Foundation
 
 extension CellIdentifier {
-    var groupSet: Set<CellIdentifier> { CellGroup.shared.getGroup(self) }
-    var inlineSet: Set<CellIdentifier> { CellGroup.shared.getInline(self) }
-    var allImpactedSet: Set<CellIdentifier> { CellGroup.shared.getAllImpactedCells(self) }
+    var groupSet: Set<CellIdentifier> { CellGroup.getGroup(self) }
+    var inlineSet: Set<CellIdentifier> { CellGroup.getInline(self) }
+    var allImpactedSet: Set<CellIdentifier> { CellGroup.getAllImpactedCells(self) }
 }
 
 class CellGroup {
     // make it a singleton
-    static var shared = CellGroup()
+    //static var shared = CellGroup()
     private init() {}
     
+    /*
     private let cells = (0..<81).map { CellIdentifier(id: $0) }
     private var groupSets: [CellIdentifier: Set<CellIdentifier>] = [:]
     private var inlineSets: [CellIdentifier: Set<CellIdentifier>] = [:]
     private var allImpactedCellSets: [CellIdentifier: Set<CellIdentifier>] = [:]
+     */
     
     // MARK: - Group Set
-    func getGroup(row: Int, col: Int) -> Set<CellIdentifier> {
+    static func getGroup(row: Int, col: Int) -> Set<CellIdentifier> {
         getGroup(cellId: CellIdentifier.getId(row: row, col: col))
     }
     
-    func getGroup(cellId: Int) -> Set<CellIdentifier> {
-        getGroup(cells[cellId])
+    static func getGroup(cellId: Int) -> Set<CellIdentifier> {
+        getGroup(CellIdentifier(id: cellId))
     }
     
-    func getGroup(_ cell: CellIdentifier) -> Set<CellIdentifier> {
+    static func getGroup(_ cell: CellIdentifier) -> Set<CellIdentifier> {
         let startRow = cell.row - cell.row % 3
         let startCol = cell.col - cell.col % 3
         
-        let mainCell = cells[CellIdentifier.getId(row: startRow, col: startCol)]
+        let mainCell = CellIdentifier(row: startRow, col: startCol)
         
+        /*
         if let cached = groupSets[mainCell] {
             return cached
         }
+         */
         
         var groupSet: Set<CellIdentifier> = []
         
         for row in startRow..<startRow + 3 {
             for col in startCol..<startCol + 3 {
-                groupSet.insert(cells[CellIdentifier.getId(row: row, col: col)])
+                groupSet.insert(CellIdentifier(row: row, col: col))
             }
         }
         
-        groupSets[mainCell] = groupSet
+        //groupSets[mainCell] = groupSet
         return groupSet
     }
     
     // MARK: - Inline set
-    func getInline(row: Int, col: Int) -> Set<CellIdentifier> {
+    static func getInline(row: Int, col: Int) -> Set<CellIdentifier> {
         getInline(cellId: CellIdentifier.getId(row: row, col: col))
     }
     
-    func getInline(cellId: Int) -> Set<CellIdentifier> {
-        getInline(cells[cellId])
+    static func getInline(cellId: Int) -> Set<CellIdentifier> {
+        getInline(CellIdentifier(id: cellId))
     }
     
-    func getInline(_ cell: CellIdentifier) -> Set<CellIdentifier> {
+    static func getInline(_ cell: CellIdentifier) -> Set<CellIdentifier> {
+        /*
         if let cached = inlineSets[cell] {
             return cached
         }
-        
+        */
         var inlineSet: Set<CellIdentifier> = []
         
         for i in 0..<9 {
-            inlineSet.insert(cells[CellIdentifier.getId(row: cell.row, col: i)])
-            inlineSet.insert(cells[CellIdentifier.getId(row: i, col: cell.col)])
+            inlineSet.insert(CellIdentifier(row: cell.row, col: i))
+            inlineSet.insert(CellIdentifier(row: i, col: cell.col))
         }
         
-        inlineSets[cell] = inlineSet
+        // inlineSets[cell] = inlineSet
         return inlineSet
     }
     
     // MARK: - All Impacted Cells
-    func getAllImpactedCells(row: Int, col: Int) -> Set<CellIdentifier> {
+    static func getAllImpactedCells(row: Int, col: Int) -> Set<CellIdentifier> {
         getAllImpactedCells(cellId: CellIdentifier.getId(row: row, col: col))
     }
     
-    func getAllImpactedCells(cellId: Int) -> Set<CellIdentifier> {
-        getAllImpactedCells(cells[cellId])
+    static func getAllImpactedCells(cellId: Int) -> Set<CellIdentifier> {
+        getAllImpactedCells(CellIdentifier(id: cellId))
     }
     
-    func getAllImpactedCells(_ cell: CellIdentifier) -> Set<CellIdentifier> {
+    static func getAllImpactedCells(_ cell: CellIdentifier) -> Set<CellIdentifier> {
+        /*
         if let cached = allImpactedCellSets[cell] {
             return cached
         }
-        
+        */
         let groupSet = getGroup(cell)
         let inlineSet = getInline(cell)
         let allImpacted = groupSet.union(inlineSet)
         
-        allImpactedCellSets[cell] = allImpacted
+        // allImpactedCellSets[cell] = allImpacted
         return allImpacted
     }
 }

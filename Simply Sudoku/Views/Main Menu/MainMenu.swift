@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct MainMenu: View {
-    @State private var difficulty: PuzzleDifficulty? = nil
+    // @State private var difficulty: PuzzleDifficulty? = nil
+    @StateObject private var mainMenuVM = MainMenuViewModel()
     
     var body: some View {
         NavigationStack {
@@ -20,10 +21,11 @@ struct MainMenu: View {
                 Spacer(minLength: 10)
                 
                 VStack(spacing: 15) {
-                    DifficultySelector(difficulty: $difficulty)
+                    DifficultySelector(difficulty: $mainMenuVM.selectedDifficulty)
+                        .environmentObject(mainMenuVM)
                     
-                    NavigationButton("Play!", enabled: difficulty != nil) {
-                        PuzzleGridEntry(difficulty: difficulty ?? .medium)
+                    NavigationButton("Play!", enabled: mainMenuVM.selectedDifficulty != nil) {
+                        PuzzleGridEntry(puzzle: mainMenuVM.selectedPuzzle ?? PuzzleViewModel(difficulty: .medium))
                     }
                 }
                 .fixedSize(horizontal: true, vertical: false)

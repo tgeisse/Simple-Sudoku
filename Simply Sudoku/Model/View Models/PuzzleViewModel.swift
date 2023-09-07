@@ -10,6 +10,7 @@ import Foundation
 class PuzzleViewModel: ObservableObject {
     @Published var puzzleReady = false
     @Published var cellContents: [CellContent] = (0..<81).map { _ in CellContent() }
+    private(set) var generated = false
     
     let cellWarningTracker = CellWarningTracking()
     private var puzzle: Puzzle
@@ -27,6 +28,7 @@ class PuzzleViewModel: ObservableObject {
     #if DEBUG
     init() {
         puzzle = Puzzle(difficulty: .easy)
+        
     }
     #endif
     
@@ -36,6 +38,7 @@ class PuzzleViewModel: ObservableObject {
     
     func generatePuzzle() {
         puzzle.generate()
+        generated = true
     }
     
     func fillGivenCells() {

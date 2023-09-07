@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		34531ABE2AA94B7600DA08D3 /* MainMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34531ABD2AA94B7600DA08D3 /* MainMenuViewModel.swift */; };
 		349FE6FB29B7E101009A3FD7 /* PuzzleGridEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349FE6FA29B7E101009A3FD7 /* PuzzleGridEntry.swift */; };
 		349FE6FD29B7E197009A3FD7 /* NavigationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349FE6FC29B7E197009A3FD7 /* NavigationButton.swift */; };
 		349FE70029B7EC2D009A3FD7 /* ButtonLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349FE6FF29B7EC2D009A3FD7 /* ButtonLabel.swift */; };
@@ -41,6 +42,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		34531ABD2AA94B7600DA08D3 /* MainMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewModel.swift; sourceTree = "<group>"; };
 		349FE6FA29B7E101009A3FD7 /* PuzzleGridEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleGridEntry.swift; sourceTree = "<group>"; };
 		349FE6FC29B7E197009A3FD7 /* NavigationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationButton.swift; sourceTree = "<group>"; };
 		349FE6FF29B7EC2D009A3FD7 /* ButtonLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonLabel.swift; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 				349FE71929B81192009A3FD7 /* PuzzleViewModel.swift */,
 				349FE72129BA4C4A009A3FD7 /* CellContent.swift */,
 				34C9A41729C4F30A009DAFCC /* CellWarningTracking.swift */,
+				34531ABD2AA94B7600DA08D3 /* MainMenuViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 			files = (
 				349FE71329B80B9C009A3FD7 /* PuzzleNumberControls.swift in Sources */,
 				34B121B129BE459300DB3129 /* CellGroup.swift in Sources */,
+				34531ABE2AA94B7600DA08D3 /* MainMenuViewModel.swift in Sources */,
 				34C40CA029B7B97400D11DC4 /* SelectButton.swift in Sources */,
 				34C40CA229B7BA7200D11DC4 /* RoundedRectangleFill.swift in Sources */,
 				349FE72229BA4C4A009A3FD7 /* CellContent.swift in Sources */,

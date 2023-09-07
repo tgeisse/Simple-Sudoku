@@ -10,6 +10,7 @@ import SwiftUI
 struct DifficultySelector: View {
     @Binding var difficulty: PuzzleDifficulty?
     @State private var buttonWidth: CGFloat = 20
+    @EnvironmentObject private var mainMenuVM: MainMenuViewModel
     
     init(difficulty: Binding<PuzzleDifficulty?> = Binding.constant(nil)) {
         self._difficulty = difficulty
@@ -18,9 +19,10 @@ struct DifficultySelector: View {
     var body: some View {
         HStack {
             ForEach(PuzzleDifficulty.allCases, id: \.rawValue) { diff in
-                SelectButton(diff.rawValue, isSelected:  diff == difficulty) {
+                SelectButton(diff.rawValue, isSelected: diff == difficulty) {
                     difficulty = diff
                 }
+                .disabled(mainMenuVM.generatedPuzzles[diff] == nil)
             }
         }
         .fixedSize(horizontal: true, vertical: false)

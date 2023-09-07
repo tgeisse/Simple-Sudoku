@@ -10,8 +10,8 @@ import SwiftUI
 struct PuzzleGridEntry: View {
     @StateObject private var puzzleViewModel: PuzzleViewModel
     
-    init(difficulty: PuzzleDifficulty) {
-        _puzzleViewModel = StateObject(wrappedValue: PuzzleViewModel(difficulty: difficulty))
+    init(puzzle: PuzzleViewModel) {
+        _puzzleViewModel = StateObject(wrappedValue: puzzle)
     }
     
     var body: some View {
@@ -25,21 +25,33 @@ struct PuzzleGridEntry: View {
     }
     
     private func loadOrGeneratePuzzle() {
-        DispatchQueue.global(qos: .userInitiated).async {
-            puzzleViewModel.generatePuzzle()
-            
-            DispatchQueue.main.async {
-                puzzleViewModel.fillGivenCells()
-                puzzleViewModel.puzzleReady = true
+        if !puzzleViewModel.generated {
+            DispatchQueue.global(qos: .userInitiated).async {
+                puzzleViewModel.generatePuzzle()
+                
+                DispatchQueue.main.async {
+                    renderPuzzle()
+                }
             }
+        } else {
+            renderPuzzle()
         }
+    }
+    
+    private func renderPuzzle() {
+        puzzleViewModel.fillGivenCells()
+        puzzleViewModel.puzzleReady = true
     }
 }
 
 #if DEBUG
 struct PuzzleGridEntry_Previews: PreviewProvider {
     static var previews: some View {
-        PuzzleGridEntry(difficulty: .medium)
+        PuzzleGridEntry(puzzle: {
+            let puzzle = PuzzleViewModel(difficulty: .easy)
+            puzzle.generatePuzzle()
+            return puzzle
+        }())
     }
 }
 #endif
